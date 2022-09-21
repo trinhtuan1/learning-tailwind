@@ -1,0 +1,14 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: "Enter Git name"
+        required: true
+      reason:
+        description: "Reason doing so"
+        required: true
+        default: "My check"
